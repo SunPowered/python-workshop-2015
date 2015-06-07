@@ -6,9 +6,10 @@
     program scripting.  Many of these ideas carry forward from 
     other languages.
 """
+import os
 
 #
-#  If / Else
+#  If / Elif / Else
 #
 
 """
@@ -103,6 +104,16 @@ while counter < 5:
 raw_input("More...")
 
 #
+# with
+#
+
+with open('file.txt', 'w') as f:
+    f.write("This is a line")
+    f.write("This is another line")
+os.remove("file.txt")
+
+
+#
 #  try / except / else / finally
 #
 
@@ -122,8 +133,8 @@ raw_input("More...")
 print
 print "Try / Except"
 my_case = 0
+my_list = [1, 2, 3, 4]
 try:
-    my_list = [1, 2, 3, 4]
     print my_list[2]
 except IndexError:
     print "There is no index here, do something else"
