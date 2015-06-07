@@ -1,0 +1,6 @@
+# Py files
+*.py[co]
+
+# Spyder files
+*.spyderproject
+*.spyderworkspace
